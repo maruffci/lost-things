@@ -1,0 +1,147 @@
+<html>
+	<head>
+		<title>Post Item</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet"/>
+		<link href="css/bootstrap.css" rel="stylesheet"/>
+		<link href="css/bootstrap-theme.css" rel="stylesheet"/>
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row-fluid">
+				<div class="row">
+					<div class="span20">
+						<div class="row">
+							<div class="col-lg-20">
+								<h2>Report an Item</h2>
+									<form name = "form1" id = "form1" method = "post" >
+										<div class="form-group">
+											<p>Category</p>
+											<select class="custom-select" name = "insertCategory" id = "insertCategory">
+												<option selected>Open this select menu</option>
+												<option value = "1">Electronic</option>
+												<option value = "2">Academic</option>
+												<option value = "3">Walet</option>
+												<option value = "4">Bag</option>
+												<option value = "5">Clothing</option>
+												<option value = "6">Wearable</option>
+												<option value = "7">Card</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<p>Name</p>
+											<input class="form-control" type = "text" name = "Name" required/>
+										</div>
+										<div class="form-group">
+											<p>Description</p>
+											<input class="form-control" type = "text" name = "Description" required/>
+										</div>
+										<div class="form-group">
+											<p>Create the questionnaire please</p>
+											<div class="custom-control custom-checkbox">
+												<input class="custom-control-input" type = "checkbox" name = "question" id="question1" value = "QUESTION">
+												<label class="custom-control-label" for="question1">What color is it?</label>
+											</div>
+											<div class="custom-control custom-radio">
+												<input class="custom-control-input" type="radio" name = "answer" id="answer1" value="color1"/>
+												<label class="custom-control-label" for="answer1">black</label>
+											</div>
+											<div class="custom-control custom-radio">
+												<input class="custom-control-input" type="radio" name = "answer" id="answer2" value="color2"/>
+												<label class="custom-control-label" for="answer2">bleu</label><br>
+											</div>
+											<div class="custom-control custom-radio">
+												<input class="custom-control-input" type="radio" name = "answer" id="answer3" value="color3"/>
+												<label class="custom-control-label" for="answer3">white</label><br>
+											</div>
+											<div class="custom-control custom-radio">
+												<input class="custom-control-input" type="radio" name = "answer" id="answer4" value="color4"/>
+												<label class="custom-control-label" for="answer4">grey</label><br>
+											</div>
+											<div class="custom-control custom-radio">
+												<input class="custom-control-input" type="radio" name = "answer" id="answer5" value="color5"/>
+												<label class="custom-control-label" for="answer5">green</label><br>
+											</div>
+											<div class="custom-control custom-radio">
+												<input class="custom-control-input" type="radio" name = "answer" id="answer6" value="color6"/>
+												<label class="custom-control-label" for="answer6">yellow</label><br>
+											</div>
+											<div class="custom-control custom-radio">
+												<input class="custom-control-input" type="radio" name = "answer" id="answer7" value="color7"/>
+												<label class="custom-control-label" for="answer7">orange</label><br>
+											</div>
+											<div class="custom-control custom-radio">
+												<input class="custom-control-input" type="radio" name = "answer" id="answer8" value="color8"/>
+												<label class="custom-control-label" for="answer8">red</label><br>
+											</div>
+											<div class="custom-control custom-radio">
+												<input class="custom-control-input" type="radio" name = "answer" id="answer9" value="color9"/>
+												<label class="custom-control-label" for="answer9">pink</label><br>
+											</div>
+											<div class="custom-control custom-radio">
+												<input class="custom-control-input" type="radio" name = "answer" id="answer10" value="color10"/>
+												<label class="custom-control-label" for="answer10">other</label><br>
+											</div>
+											<div class="custom-control custom-checkbox">
+												<input class="custom-control-input" type = "checkbox" name = "question" id="question2" value = "QUESTION">
+												<label class="custom-control-label" for="question2">What is the brand?</label>
+												<input class="form-control" type="text" name="A2" id="A2"/>
+											</div>
+											<div class="custom-control custom-checkbox">
+												<input class="custom-control-input" type = "checkbox" name = "question" id="question3" value = "QUESTION">
+												<label class="custom-control-label" for="question3">What was inside it?</label>
+												<input class="form-control" type="text" name="A3" id="A3"/>
+											</div>
+											<div class="custom-control custom-checkbox">
+												<input class="custom-control-input" type = "checkbox" name = "question" id="question4" value = "QUESTION">
+												<label class="custom-control-label" for="question4">Made with which material?</label>
+												<input class="form-control" type="text" name="A4" id="A4"/>
+											</div>
+											<div class="custom-control custom-checkbox">
+												<input class="custom-control-input" type = "checkbox" name = "question" id="question5" value = "QUESTION">
+												<label class="custom-control-label" for="question5">Was it locked?</label>
+											</div>
+											<div class="custom-control custom-radio">
+												<input class="custom-control-input" type="radio" name = "lock" id="yes" value="yes"/>
+												<label class="custom-control-label" for = "yes">Yes</label>
+											</div>
+											<div class="custom-control custom-radio">
+												<input class="custom-control-input" type="radio" name = "lock" id="no" value="no"/>
+												<label class="custom-control-label" for = "no">No</label>
+											</div>
+											<div class="custom-control custom-checkbox">
+												<input class="custom-control-input" type = "checkbox" name = "question" id="question6" value = "QUESTION">
+												<label class="custom-control-label" for="question6">Where was it lost?</label>
+												<input class="form-control" type="text" name="A6" id="A6"/>
+											</div>
+											<div class="custom-control custom-checkbox">
+												<input class="custom-control-input" type = "checkbox" name = "question" id="question7" value = "QUESTION">
+												<label class="custom-control-label" for="question7">What is the wallpaper?</label>
+												<input class="form-control" type="text" name="A7" id="A7"/>
+											</div>
+											<div class="form-group">
+												<h4>You can add some question</h4>
+												<p>Question </p>
+												<input class="form-control" type="text" name="Q0" id="Q0"/><br>
+												<p>Answer  </p>
+												<input class="form-control" type="text" name="A0" id="A0"/><br>
+												<p>Question</p>
+												<input class="form-control" type="text" name="Q1" id="Q1"/><br>
+												<p>Answer</p>
+												<input class="form-control" type="text" name="A1" id="A1"/><br>
+												<p>Question</p>
+												<input class="form-control" type="text" name="Q2" id="Q2"/><br>
+												<p>Answer</p>
+												<input class="form-control" type="text" name="A2" id="A2"/><br>
+											</div>
+										</div>
+									<input class="btn btn-primary"  type = "submit" value = "submit">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
