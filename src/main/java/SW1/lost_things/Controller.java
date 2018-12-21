@@ -16,12 +16,16 @@ import org.eclipse.jetty.http.HttpStatus;
 public class Controller extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-		if(req.getServletPath().equals("/") && req.getParameter("api").equals("true")) {
+		if(req.getServletPath().equals("/") && req.getParameter("api") != null && req.getParameter("api").equals("true")) {
 			resp.setHeader("Content-Type", "application/json");
-			if(req.getParameter("action").equals("show_tables")) {
+			if(req.getParameter("action") != null && req.getParameter("action").equals("show_tables")) {
 				resp.setStatus(HttpStatus.OK_200);
 				Model m = new Model();
 				resp.getWriter().print("[{\"raw_tables\":\""+m.table_info()+"\"}]");
+			}
+			else {
+				resp.setStatus(HttpStatus.NOT_FOUND_404);
+				resp.getWriter().print("[{\"error\":\"Unspecified action!\"}]");
 			}
 		}
 		else if(req.getServletPath().equals("/")) {
